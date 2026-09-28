@@ -1,0 +1,45 @@
+            
+PS C:\工作台\ReverseEngineering4Test> git add .
+warning: in the working copy of '.vscode/extensions.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.vscode/launch.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'GUIDE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'pom.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/example/controller/UserServlet.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/java/com/example/model/UserBean.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/webapp/WEB-INF/views/user.jsp', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/webapp/WEB-INF/web.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/main/webapp/index.jsp', LF will be replaced by CRLF the next time Git touches it
+PS C:\工作台\ReverseEngineering4Test> git commit -m "Initial commit: project structure and setup"
+[master (root-commit) 7fe1931] Initial commit: project structure and setup
+ 13 files changed, 1597 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .vscode/extensions.json
+ create mode 100644 .vscode/launch.json
+ create mode 100644 GUIDE.md
+ create mode 100644 README.md
+ create mode 100644 pom.xml
+ create mode 100644 prompt_01.md
+ create mode 100644 request.md
+ create mode 100644 src/main/java/com/example/controller/UserServlet.java
+ create mode 100644 src/main/java/com/example/model/UserBean.java
+ create mode 100644 src/main/webapp/WEB-INF/views/user.jsp
+ create mode 100644 src/main/webapp/WEB-INF/web.xml
+ create mode 100644 src/main/webapp/index.jsp
+PS C:\工作台\ReverseEngineering4Test> git branch -M main
+PS C:\工作台\ReverseEngineering4Test> git remote add origin git@github.com:donnyyang-git/ReverseEngineering4Test.git
+PS C:\工作台\ReverseEngineering4Test> git push -u origin main
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (26/26), 28.93 KiB | 4.82 MiB/s, done.
+Total 26 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:donnyyang-git/ReverseEngineering4Test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\工作台\ReverseEngineering4Test> 
+PS C:\工作台\ReverseEngineering4Test> 
+
+
+
