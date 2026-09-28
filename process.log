@@ -112,3 +112,575 @@ PS C:\工作台\ReverseEngineering4Test> & mvn package -f "C:\工作台\ReverseE
 [INFO] ------------------------------------------------------------------------
 PS C:\工作台\ReverseEngineering4Test> 
 
+
+
+PS C:\工作台\ReverseEngineering4Test> npm init playwright@latest
+
+> npx
+> create-playwright
+
+Getting started with writing end-to-end tests with Playwright:
+Initializing project in '.'
+√ Do you want to use TypeScript or JavaScript? · TypeScript
+√ Where to put your end-to-end tests? · tests
+√ Add a GitHub Actions workflow? (Y/n) · false
+√ Install Playwright browsers (can be done manually via 'npx playwright install')? (Y/n) · true
+Initializing NPM project (npm init -y)…
+Wrote to C:\工作台\ReverseEngineering4Test\package.json:
+
+{
+  "name": "reverseengineering4test",
+  "version": "1.0.0",
+  "description": "<project name=\"TomcatServletDemo\" type=\"war\">     <description>A Java Web Servlet & Bean Example for Tomcat</description> </project>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donnyyang-git/ReverseEngineering4Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/donnyyang-git/ReverseEngineering4Test/issues"
+  },
+  "homepage": "https://github.com/donnyyang-git/ReverseEngineering4Test#readme"
+}
+
+
+Installing Playwright Test (npm install --save-dev @playwright/test)…
+
+added 3 packages, and audited 4 packages in 14s
+
+found 0 vulnerabilities
+Installing Types (npm install --save-dev @types/node)…
+
+added 2 packages, and audited 6 packages in 6s
+
+found 0 vulnerabilities
+Writing playwright.config.ts.
+Writing tests\example.spec.ts.
+Writing package.json.
+Downloading browsers (npx playwright install)…
+✔ Success! Created a Playwright Test project at C:\工作台\ReverseEngineering4Test
+
+Inside that directory, you can run several commands:
+
+  npx playwright test
+    Runs the end-to-end tests.
+
+  npx playwright test --ui
+    Starts the interactive UI mode.
+
+  npx playwright test --project=chromium
+    Runs the tests only on Desktop Chrome.
+
+  npx playwright test example
+    Runs the tests in a specific file.
+
+  npx playwright test --debug
+    Runs the tests in debug mode.
+
+  npx playwright codegen
+    Auto generate tests with Codegen.
+
+We suggest that you begin by typing:
+
+    npx playwright test
+
+And check out the following files:
+  - .\tests\example.spec.ts - Example end-to-end test
+  - .\playwright.config.ts - Playwright Test configuration
+
+Visit https://playwright.dev/docs/intro for more information. ✨
+
+Happy hacking! 🎭
+PS C:\工作台\ReverseEngineering4Test> npm i @midscene/web --save-dev
+npm warn deprecated whatwg-encoding@2.0.0: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 270 packages, and audited 276 packages in 54s
+
+72 packages are looking for funding
+  run `npm fund` for details
+
+10 vulnerabilities (3 moderate, 7 high)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+npm warn allow-scripts 1 package has install scripts not yet covered by allowScripts:
+npm warn allow-scripts   sharp@0.34.5 (install: node install/check.js || npm run build)
+npm warn allow-scripts
+npm warn allow-scripts Run `npm approve-scripts --allow-scripts-pending` to review, or `npm approve-scripts <pkg>` to allow.
+PS C:\工作台\ReverseEngineering4Test> 
+
+
+
+PS C:\工作台\ReverseEngineering4Test> npx playwright test
+
+Running 18 tests using 10 workers
+[chromium] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+[chromium] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+…ests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty)
+
+❌ [Playwright 路由阻斷診斷提示]：
+… tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2
+
+❌ [Playwright 路由阻斷診斷提示]：
+…ests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty)
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+… tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+…ests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty)
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+… tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+  1) [chromium] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-8d5c2-hen-email-format-is-invalid-chromium\error-context.md
+
+  2) [chromium] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-8a58f-bmit-with-valid-credentials-chromium\error-context.md
+
+  3) [chromium] › tests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty) 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-e6fa0-name-is-missing-Null-Empty--chromium\error-context.md
+
+  4) [chromium] › tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-7542c-rname-length-is-less-than-2-chromium\error-context.md
+
+[firefox] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+  5) [firefox] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-8a58f-bmit-with-valid-credentials-firefox\error-context.md
+
+[firefox] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+  6) [firefox] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-8d5c2-hen-email-format-is-invalid-firefox\error-context.md
+
+…ests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty)
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+  7) [firefox] › tests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty) 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-e6fa0-name-is-missing-Null-Empty--firefox\error-context.md
+
+… tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+[webkit] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials
+
+❌ [Playwright 路由阻斷診斷提示]：
+[webkit] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid
+
+❌ [Playwright 路由阻斷診斷提示]：
+[webkit] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+[webkit] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+[webkit] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+[webkit] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+  8) [webkit] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-8a58f-bmit-with-valid-credentials-webkit\error-context.md
+
+  9) [webkit] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-8d5c2-hen-email-format-is-invalid-webkit\error-context.md
+
+  10) [firefox] › tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-7542c-rname-length-is-less-than-2-firefox\error-context.md
+
+… tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+  11) [webkit] › tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-7542c-rname-length-is-less-than-2-webkit\error-context.md
+
+…ests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty)
+
+❌ [Playwright 路由阻斷診斷提示]：
+📌 當前瀏覽器網址 (URL): http://localhost:8080/TomcatServletDemo/index.jsp
+📌 當前網頁文字快照:
+"歡迎使用 Tomcat Servlet & Bean 範例專案
+
+點擊下方按鈕前往 Servlet 測試頁面：
+
+進入使用者頁面 (/user)..."
+
+  12) [webkit] › tests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty) 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first() with timeout 5000ms
+      - waiting for getByLabel(/使用者名稱|姓名|Username/i).or(getByPlaceholder(/請輸入使用者名稱|姓名/i)).or(locator('#username')).or(locator('input[name="username"]')).or(locator('input[name="name"]')).first()
+
+
+      52 |         // 2. 智慧防禦：檢查表單主要欄位是否順利出現
+      53 |         const scope = await getActiveScope(page);
+    > 54 |         await expect(FORM_ELEMENTS.USERNAME(scope)).toBeVisible({ timeout: 5000 });
+         |                                                     ^
+      55 |     } catch (error) {
+      56 |         const currentUrl = page.url();
+      57 |         const bodyText = await page.innerText('body');
+        at C:\工作台\ReverseEngineering4Test\tests\userForm.spec.ts:54:53
+
+    Error Context: test-results\userForm-User-Form-Submiss-e6fa0-name-is-missing-Null-Empty--webkit\error-context.md
+
+  12 failed
+    [chromium] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials 
+    [chromium] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid 
+    [chromium] › tests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty) 
+    [chromium] › tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2 
+    [firefox] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials 
+    [firefox] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid 
+    [firefox] › tests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty) 
+    [firefox] › tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2 
+    [webkit] › tests\userForm.spec.ts:78:9 › User Form Submission E2E Validation Tests › TC_USR_001 | Should successfully submit with valid credentials 
+    [webkit] › tests\userForm.spec.ts:94:9 › User Form Submission E2E Validation Tests › TC_USR_002 | Should block submission when email format is invalid 
+    [webkit] › tests\userForm.spec.ts:117:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003a | Should block submission when username is missing (Null/Empty) 
+    [webkit] › tests\userForm.spec.ts:132:13 › User Form Submission E2E Validation Tests › Failure Validation Tests › TC_USR_003b | Should block submission when username length is less than 2 
+  6 passed (15.1s)
+
+  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.
+PS C:\工作台\ReverseEngineering4Test>
+PS C:\工作台\ReverseEngineering4Test> npx playwright test --ui

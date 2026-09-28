@@ -1,0 +1,24 @@
+{
+  "name": "reverseengineering4test",
+  "version": "1.0.0",
+  "description": "<project name=\"TomcatServletDemo\" type=\"war\">     <description>A Java Web Servlet & Bean Example for Tomcat</description> </project>",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donnyyang-git/ReverseEngineering4Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/donnyyang-git/ReverseEngineering4Test/issues"
+  },
+  "homepage": "https://github.com/donnyyang-git/ReverseEngineering4Test#readme",
+  "devDependencies": {
+    "@midscene/web": "^1.13.3",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3"
+  }
+}
