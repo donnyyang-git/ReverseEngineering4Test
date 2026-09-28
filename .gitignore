@@ -1,0 +1,46 @@
+# ====================================================================
+# Java & Maven 產出物 (主要過濾編譯檔案，如 target/ 資料夾)
+# ====================================================================
+**/target/
+*.class
+*.war
+*.ear
+*.jar
+
+# ====================================================================
+# IDE / 編輯器特定檔案
+# ====================================================================
+# Eclipse 專案檔案
+.classpath
+.project
+.settings/
+.factorypath
+
+# VS Code (保留設定，但排除本地快取與延伸模組狀態)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+
+# ====================================================================
+# 作業系統暫存檔
+# ====================================================================
+.DS_Store
+.DS_Store?
+Thumds.db
+Ehthumbs.db
+Log.txt

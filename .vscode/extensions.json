@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "vscjava.vscode-java-pack",
+    "Pivotal.vscode-boot-dev-pack",
+    "richardson.restart-extension"
+  ]
+}
