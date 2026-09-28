@@ -14,7 +14,6 @@
         button:hover { background: #004999; }
         .result { margin-top: 20px; padding: 15px; background: #eef6fc; border-left: 4px solid #0066cc; }
     </style>
-    <script src="js/clientValidation.js"></script>
 </head>
 <body>
 <div class="container">

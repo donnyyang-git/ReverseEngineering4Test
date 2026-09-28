@@ -37,7 +37,7 @@ ReverseEngineering4Test/
 
 ### 2. 開啟專案
 在 VS Code 中選擇 **File > Open Folder...** 並打開：
-`C:\Users\daphne\Downloads\工作台\ReverseEngineering4Test`
+`C:\工作台\ReverseEngineering4Test`
 
 ### 3. 編譯與打包
 若系統中已安裝 Maven，可透過終端機執行打包指令生成 `.war` 檔案：

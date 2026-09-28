@@ -43,3 +43,72 @@ PS C:\工作台\ReverseEngineering4Test>
 
 
 
+
+
+
+PS C:\工作台\ReverseEngineering4Test> & mvn clean -f "C:\工作台\ReverseEngineering4Test\pom.xml"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.example:TomcatServletDemo >--------------------
+[INFO] Building TomcatServletDemo 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ TomcatServletDemo ---
+[INFO] Deleting C:\工作台\ReverseEngineering4Test\target
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.272 s
+[INFO] Finished at: 2026-09-28T17:52:54+08:00
+[INFO] ------------------------------------------------------------------------
+PS C:\工作台\ReverseEngineering4Test> & mvn package -f "C:\工作台\ReverseEngineering4Test\pom.xml"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.example:TomcatServletDemo >--------------------
+[INFO] Building TomcatServletDemo 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ TomcatServletDemo ---
+[INFO] skip non existing resourceDirectory C:\工作台\ReverseEngineering4Test\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ TomcatServletDemo ---
+[INFO] Changes detected - recompiling the module! :input tree
+[INFO] Compiling 2 source files with javac [debug target 1.8] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ TomcatServletDemo ---
+[INFO] skip non existing resourceDirectory C:\工作台\ReverseEngineering4Test\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ TomcatServletDemo ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 1 source file with javac [debug target 1.8] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.2:test (default-test) @ TomcatServletDemo ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.controller.UserServletTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 s -- in com.example.controller.UserServletTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- war:3.3.2:war (default-war) @ TomcatServletDemo ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [TomcatServletDemo] in [C:\工作台\ReverseEngineering4Test\target\TomcatServletDemo]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\工作台\ReverseEngineering4Test\src\main\webapp]
+[INFO] Building war: C:\工作台\ReverseEngineering4Test\target\TomcatServletDemo.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.437 s
+[INFO] Finished at: 2026-09-28T17:53:01+08:00
+[INFO] ------------------------------------------------------------------------
+PS C:\工作台\ReverseEngineering4Test> 
+
